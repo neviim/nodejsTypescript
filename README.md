@@ -49,4 +49,23 @@ $ yarn -v         1.22.10
 
 ```zsh
 # $ yarn add -D @typescript-eslint/eslint-plugin eslint @typescript-eslint/parser
+
+
+G:\Projetos\nodejsTypescript>yarn build
+yarn run v1.22.10
+$ tsc
+Done in 3.94s.
+
+G:\Projetos\nodejsTypescript>yarn start
+yarn run v1.22.10
+$ yarn build && node dist/src/index.js
+$ tsc
+test
+Done in 5.02s.
+
+G:\Projetos\nodejsTypescript>yarn lint
+yarn run v1.22.10
+$ eslint ./src ./test --ext .ts
+Done in 2.01s.
+
 ```
