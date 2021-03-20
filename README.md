@@ -15,9 +15,6 @@
     $ mkdir nodejstypescript
     $ cd nodejstypescript
 
-    $ mkdir src
-    $ mkdir src/util
-
     $ npm install --save path
     $ npm i --save module-alias
     $ npm i --save-dev @types/module-alias
@@ -31,7 +28,14 @@
     $ yarn add module-alias
     $ yarn add -D @types/module-alias
 
+    $ criar: .gitignore
+    $ criar: .eslintrc
+    $ criar: tsconfig.json
+
+    $ mkdir src
+    $ mkdir src/util
     $ cd src/util
+
     $ criar: module-alias.ts
 ```
 ```typescript
@@ -76,3 +80,8 @@
     Done in 2.65s.
 ```
 
+### Ts-node-dev
+
+```zsh
+    $ yarn add -D ts-node-dev
+```
