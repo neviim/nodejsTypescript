@@ -1,10 +1,11 @@
-Usando yarn 
+# Usando yarn 
 
+'''zsh
 # $ choco -v        0.10.15
 # $ node -v         v14.16.0
 # $ npm -v          6.14.11
 # $ yarn -v         1.22.10
-
+'''
 
 Instala yarn
 
