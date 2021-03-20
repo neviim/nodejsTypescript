@@ -1,14 +1,15 @@
-# Usando yarn 
+### Usando yarn 
 
-'''zsh
-# $ choco -v        0.10.15
-# $ node -v         v14.16.0
-# $ npm -v          6.14.11
-# $ yarn -v         1.22.10
-'''
+```zsh
+$ choco -v        0.10.15
+$ node -v         v14.16.0
+$ npm -v          6.14.11
+$ yarn -v         1.22.10
+```
 
-Instala yarn
+### Instala yarn
 
+```zsh
 # $ mkdir src
 # $ mkdir src/util
 
@@ -29,6 +30,8 @@ Instala yarn
 
 # $ cd src/util
 # $ criar: module-alias.ts
+```
+```typescript
     import * as path from 'path';
     import moduleAlias from 'module-alias';
 
@@ -38,6 +41,9 @@ Instala yarn
         '@src': path.join(files, 'src'),
         '@test': path.join(files, 'test')
     })
+```
+
+
 ## ESlint
 
 # $ yarn add -D @typescript-eslint/eslint-plugin eslint @typescript-eslint/parser
