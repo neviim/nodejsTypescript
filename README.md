@@ -1,37 +1,39 @@
-### Usando yarn 
+### Ambiente para desenvolvimento em TypeScript nodejs
 
 ```zsh
-$ choco -v        0.10.15
-$ node -v         v14.16.0
-$ npm -v          6.14.11
-$ yarn -v         1.22.10
+    # Soft e versão utilisados:
+
+        $ choco -v        v00.10.15
+        $ node -v         v14.16.00
+        $ npm -v          v06.14.11
+        $ yarn -v         v01.22.10
 ```
 
-### Instala yarn
+### Instalando yarn
 
 ```zsh
-# $ mkdir src
-# $ mkdir src/util
+    $ mkdir nodejstypescript
+    $ cd nodejstypescript
 
-# $ npm install --save path
-# $ npm i --save module-alias
-# $ npm i --save-dev @types/module-alias
+    $ mkdir src
+    $ mkdir src/util
 
-# $ npm install -g yarn
-# $ npm install -g typescript
+    $ npm install --save path
+    $ npm i --save module-alias
+    $ npm i --save-dev @types/module-alias
 
-##
+    $ npm install -g yarn
+    $ npm install -g typescript
 
-# $ yarn add -D typescript
-# $ yarn add -D @types/node
+    $ yarn add -D typescript
+    $ yarn add -D @types/node
 
-# $ yarn add module-alias
-# $ yarn add -D @types/module-alias
+    $ yarn add module-alias
+    $ yarn add -D @types/module-alias
 
-# $ cd src/util
-# $ criar: module-alias.ts
+    $ cd src/util
+    $ criar: module-alias.ts
 ```
-
 ```typescript
     import * as path from 'path';
     import moduleAlias from 'module-alias';
@@ -48,24 +50,29 @@ $ yarn -v         1.22.10
 ### ESlint
 
 ```zsh
-# $ yarn add -D @typescript-eslint/eslint-plugin eslint @typescript-eslint/parser
+    $ yarn add -D @typescript-eslint/eslint-plugin eslint @typescript-eslint/parser
 
 
-G:\Projetos\nodejsTypescript>yarn build
-yarn run v1.22.10
-$ tsc
-Done in 3.94s.
+    \Projetos\nodejsTypescript> yarn build
+    yarn run v1.22.10
+    $ tsc
+    Done in 3.94s.
 
-G:\Projetos\nodejsTypescript>yarn start
-yarn run v1.22.10
-$ yarn build && node dist/src/index.js
-$ tsc
-test
-Done in 5.02s.
+    \Projetos\nodejsTypescript> yarn start
+    yarn run v1.22.10
+    $ yarn build && node dist/src/index.js
+    $ tsc
+    test
+    Done in 5.02s.
 
-G:\Projetos\nodejsTypescript>yarn lint
-yarn run v1.22.10
-$ eslint ./src ./test --ext .ts
-Done in 2.01s.
+    \Projetos\nodejsTypescript> yarn lint
+    yarn run v1.22.10
+    $ eslint ./src ./test --ext .ts
+    Done in 2.01s.
 
+    \Projetos\nodejsTypescript>yarn lint:fix
+    yarn run v1.22.10
+    $ eslint ./src ./test --ext .ts --fix
+    Done in 2.65s.
 ```
+
