@@ -31,6 +31,7 @@ $ yarn -v         1.22.10
 # $ cd src/util
 # $ criar: module-alias.ts
 ```
+
 ```typescript
     import * as path from 'path';
     import moduleAlias from 'module-alias';
@@ -44,6 +45,8 @@ $ yarn -v         1.22.10
 ```
 
 
-## ESlint
+### ESlint
 
+```zsh
 # $ yarn add -D @typescript-eslint/eslint-plugin eslint @typescript-eslint/parser
+```
